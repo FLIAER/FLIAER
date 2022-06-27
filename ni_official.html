@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      margin: 0;           
+    }
+    iframe {
+      display: block;       
+      background: #ffffff;
+      border: none;        
+      height: 100vh;      
+      width: 100vw;
+    }
+    </style>
+ </head>
+ <body>
+   <iframe id='framey' frameborder = 0></iframe>
+ </body>
+ <script>
+   var webpages = [];
+   //내일 프로필완성링크//
+   webpages.push("https://naeil.link/Profilecomplete");
+   //매치메이커 한수정//
+   //매치메이커 최유진//
+   //------------------------------------------
+   var random_page = webpages[Math.floor(Math.random()*webpages.length)];
+   document.getElementById("framey").src = random_page;
+ </script>
+</html>
